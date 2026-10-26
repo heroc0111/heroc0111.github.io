@@ -1,4 +1,4 @@
-# Hervé Roussel — proof of work
+# Hervé — proof of work
 
 A fast, single-page personal site for turning introductions and cold outreach into useful product conversations. It is built with Astro and deployed to GitHub Pages.
 
