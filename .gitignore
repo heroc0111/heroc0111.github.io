@@ -3,3 +3,6 @@ node_modules
 *.local
 .remote-assets
 components.d.ts
+.playwright-mcp
+.astro/
+dist/

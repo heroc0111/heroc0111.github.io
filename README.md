@@ -1,11 +1,20 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Hervé Roussel — proof of work
 
-To start the slide show:
+A fast, single-page personal site for turning introductions and cold outreach into useful product conversations. It is built with Astro and deployed to GitHub Pages.
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
+## Local development
 
-Edit the [slides.md](./slides.md) to see the changes.
+```sh
+npm install
+npm run dev
+```
 
-Learn more about Slidev on [documentations](https://sli.dev/).
+The site is available at `http://localhost:4321`.
+
+## Content
+
+Project cards live in [`src/data/projects.ts`](src/data/projects.ts). Update a project’s name, role, status, and video URL there without changing the page layout. The presentation and responsive styling live in [`src/pages/index.astro`](src/pages/index.astro) and [`src/styles/global.css`](src/styles/global.css).
+
+## Deployment
+
+Pushes to `main` trigger the GitHub Pages workflow. It builds the static Astro output and deploys the generated `dist` artifact, which is intentionally not committed.
