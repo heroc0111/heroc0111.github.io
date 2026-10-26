@@ -3,7 +3,7 @@ export type Project = {
   eyebrow: string;
   summary: string;
   contribution: string;
-  status: 'Featured build' | 'Product walkthrough' | 'Launched AI product' | 'Prototype walkthrough';
+  status: 'Product walkthrough' | 'Working prototype';
   videoUrl: string;
   posterUrl: string;
   accent: 'teal' | 'orange' | 'violet' | 'blue';
@@ -13,10 +13,10 @@ export type Project = {
 export const projects: Project[] = [
   {
     name: 'Sentio',
-    eyebrow: 'Applied AI · Research & intelligence',
-    summary: 'A self-service intelligence system with company strategy dossiers, frozen query plans, relevance gating, and full source lineage.',
+    eyebrow: 'AI-powered market intelligence',
+    summary: 'An AI research agent that tracks companies, identifies meaningful developments, and turns scattered information into structured, source-backed intelligence.',
     contribution: 'Product judgment, AI workflow design, and hands-on engineering delivery.',
-    status: 'Featured build',
+    status: 'Product walkthrough',
     videoUrl: 'https://dzpshoqedjlvgvgjjcbg.supabase.co/storage/v1/object/public/mildly/sentio-run-agent.mp4',
     posterUrl: 'https://mildly.ai/_astro/sentio-run-agent-poster.Cym_4e0B.png',
     accent: 'teal',
@@ -24,8 +24,8 @@ export const projects: Project[] = [
   },
   {
     name: 'RiskLens',
-    eyebrow: 'AI due-diligence research',
-    summary: 'AI-assisted due diligence that analyzes complex documents, extracts relevant information, and helps analysts identify potential discrepancies.',
+    eyebrow: 'AI due diligence',
+    summary: 'Research companies, analyze documents, and generate evidence-backed due-diligence reports without spending hours manually gathering information.',
     contribution: 'AI architecture · Document analysis · Full-stack',
     status: 'Product walkthrough',
     videoUrl: 'https://dzpshoqedjlvgvgjjcbg.supabase.co/storage/v1/object/public/mildly/risklens-demo.mp4',
@@ -35,10 +35,10 @@ export const projects: Project[] = [
   },
   {
     name: 'ClauseCheck',
-    eyebrow: 'AI-powered contract review',
-    summary: 'AI document understanding that parses complex legal agreements, flags high-risk commitments, and drafts verified clause-level modifications.',
+    eyebrow: 'AI contract review',
+    summary: 'An AI-assisted contract review tool that identifies risky clauses, explains potential issues, and suggests editable improvements.',
     contribution: 'AI architecture · Product design · Full-stack',
-    status: 'Launched AI product',
+    status: 'Product walkthrough',
     videoUrl: 'https://dzpshoqedjlvgvgjjcbg.supabase.co/storage/v1/object/public/mildly/clausecheck-demo.mp4',
     posterUrl: 'https://mildly.ai/_astro/clausecheck-demo-poster.BagcKuG2.png',
     accent: 'violet',
@@ -46,10 +46,10 @@ export const projects: Project[] = [
   },
   {
     name: 'StreetSense',
-    eyebrow: 'Computer vision for operations',
-    summary: 'Turns existing traffic camera feeds into live incident and congestion alerts that operators can review, confirm, and dispatch.',
+    eyebrow: 'AI-powered traffic monitoring',
+    summary: 'Turns existing camera feeds into real-time traffic insights and actionable incident alerts.',
     contribution: 'Computer vision · Operator workflow · No new roadside hardware',
-    status: 'Prototype walkthrough',
+    status: 'Working prototype',
     videoUrl: 'https://dzpshoqedjlvgvgjjcbg.supabase.co/storage/v1/object/public/mildly/streetsense-demo.mp4',
     posterUrl: 'https://mildly.ai/_astro/streetsense-demo-poster.ChRWWXNc.png',
     accent: 'blue',
