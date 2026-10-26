@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import herveIcon from '../assets/herve-icon.jpg';
 import { projects } from '../data/projects';
 
 const featured = projects[0];
@@ -24,7 +26,9 @@ const supporting = projects.slice(1);
         </div>
         <div class="hero-meta" aria-label="Career highlights">
           <p>01 — BUILDER PROFILE</p>
-          <div class="orbital-mark" aria-hidden="true"><i></i><i></i><b>AI</b></div>
+          <div class="hero-avatar">
+            <Image src={herveIcon} alt="Hervé" width={270} height={270} loading="eager" />
+          </div>
           <ul>
             <li>Founded &amp; exited</li>
             <li>Early code LLMs</li>
